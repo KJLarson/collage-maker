@@ -9,13 +9,28 @@
 </head>
 
 <body>
-  <img src="assets/pieces/man.png" draggable="true" id="src_copy" class="piece" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);"></img>
+  <!-- <img src="assets/pieces/man.png" draggable="true" id="src_copy" class="piece" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);"></img>
 
   <div id="dest1" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"><h2>Drop Zone</h2>
-  </div>
+  </div> -->
 
   <!-- <div id="dest2" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"><strong>Drop Zone</strong>
   </div> -->
+
+  <div style="float:left">
+    <div>
+      <img id="img1" draggable="true" ondragstart="drag(event)" src='http://jsfiddle.net/img/logo.png'>
+      <img id="img2" draggable="true" ondragstart="drag(event)" src='http://jsfiddle.net/img/logo.png'>
+      <img id="img3" draggable="true" ondragstart="drag(event)" src='assets/pieces/man.png'>
+
+      
+      <input type="button" onclick="convertCanvasToImage()" value="Generate Image" style="float:right" />
+    </div>
+
+    <canvas id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)" width="500" height="500"
+      style="border: 1px solid gray" />
+
+  </div>
 
   <script src="src/index.js"></script>
 </body>
