@@ -27,13 +27,11 @@ div {
   border: 1px solid black;
 }
 
-/* .piece {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
+.piece {
+  cursor: move;
 }
 
-#dest1, #dest2 {
+/* #dest1, #dest2 {
   border: 5px solid blue;
   width: 600px;
   height: 600px;
